@@ -1,0 +1,330 @@
+body{
+  margin: 0;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #323a51;
+    padding: 10px 0;
+    -ms-transform: skewY(-1deg);
+    -webkit-transform: skewX(-1deg);
+    transform: skewY(-1deg);
+    margin-top: -15px; /* Voeg een negatieve marge toe om de header omhoog te trekken */
+    border-bottom: 2px solid black;
+  }
+  
+  header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    padding-left: 120px;
+    padding-right: 20px;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+  
+  header .header-wrapper:after,
+  header .header-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  header .header-wrapper:after {
+    background: #323a51;
+  }
+  
+  .logo {
+    max-width: 140px;
+    margin-right: 0;
+    margin-top: 32px;
+  }
+  
+  h1 {
+    font-family: "Lilita One", serif;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: 400;
+    font-family: "Lilita One", serif;
+    text-shadow:
+    -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000,
+    2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000,
+    -2px 2px 0 #000000, -2px 0 0 #000000, 0 3.5px 0 #000000,
+    -2px 3.5px 0 #000000, 2px 3.5px 0 #000000; 
+  }
+
+  .h1Strong{
+    font-family: "Lilita One", serif;
+    margin: 0;
+    color: #FFF600;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: 400;
+    font-family: "Lilita One", serif;
+    text-shadow:
+    -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000,
+    2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000,
+    -2px 2px 0 #000000, -2px 0 0 #000000, 0 3.5px 0 #000000,
+    -2px 3.5px 0 #000000, 2px 3.5px 0 #000000; 
+  }
+  .pStrong{
+    font-family: "Lilita One", serif;
+    margin: 0;
+    max-width: 500px;
+    color: #00FF55;
+    font-size: clamp(10px, 5vw, 20px);
+    font-weight: 400;
+    text-shadow:
+    -1px -1px 0 #000000, 0 -1px 0 #000000, 1px -1px 0 #000000, 
+    1px 0 0 #000000, 1px 1px 0 #000000, 0 1px 0 #000000, 
+    -1px 1px 0 #000000, -1px 0 0 #000000;
+  }
+  p {
+    font-family: "Lilita One", serif;
+    margin: 0;
+    max-width: 500px;
+    color: white;
+    font-size: clamp(10px, 5vw, 20px);
+    font-weight: 400;
+    text-shadow:
+    -1px -1px 0 #000000, 0 -1px 0 #000000, 1px -1px 0 #000000, 
+    1px 0 0 #000000, 1px 1px 0 #000000, 0 1px 0 #000000, 
+    -1px 1px 0 #000000, -1px 0 0 #000000;
+  }
+  
+  
+  .nav {
+    width: 80%;
+    margin-top: 15px;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Lilita One", serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2000;
+    -ms-transform: skewY(1deg);
+    -webkit-transform: skewX(1deg);
+    transform: skewY(1deg);
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 0px 1px 0 black, 0px -1px 0 black, 1px 0px 0 black, -1px 0px 0 black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: #FFF600;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .heroImage{
+    -ms-transform: skewY(-1deg);
+    -webkit-transform: skewX(-1deg);
+    transform: skewY(-1deg);
+  }
+  
+  /*
+  .heroImage {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .heroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .heroOverlay {
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+  
+  .heroBrock{
+    max-width: 50%;
+    width: 100%;
+  }
+  */
+  
+  .heroImage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0; /* Zorg dat er geen marges zijn */
+  }
+  
+  .heroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt voor een nette schaalverhouding van de afbeelding */
+  }
+  
+  .welcomeMessage {
+    position: absolute; /* Plaatst de welcome message boven de afbeelding */
+    top: 50%; /* Horizontaal gecentreerd */
+    left: 50%; /* Verticaal gecentreerd */
+    transform: translate(-50%, -50%); /* Correctie voor exact centreren */
+    z-index: 20; /* Zorgt ervoor dat de tekst boven de afbeelding blijft */
+  }
+  
+  .welcomeMessage h1{
+    margin-top: 150px;
+    color: white;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: 400;
+    font-family: "Lilita One", serif;
+    text-shadow: -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000, 2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000, -2px 2px 0 #000000, -2px 0 0 #000000, 0 3.5px 0 #000000, -2px 3.5px 0 #000000, 2px 3.5px 0 #000000;
+    -ms-transform: skewY(1deg);
+    -webkit-transform: skewX(1deg);
+    transform: skewY(1deg);
+  }
+  .whoContainer {
+    display: flex;
+    -ms-transform: skewY(-1deg);
+    -webkit-transform: skewX(-1deg);
+    transform: skewY(-1deg);
+    background-color: #323a51;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: -5px;
+  }
+  .who {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+  }
+  
+  .who p{
+    max-width: 569px;
+  }
+  .who h1, .who p {
+    -ms-transform: skewY(1deg);
+    -webkit-transform: skewX(1deg);
+    transform: skewY(1deg);
+  }
+
+  .introStatsContainer{
+    display: flex;
+  }
+
+  .introStats{
+    text-align: center;
+  }
+
+  .introStats img{
+    max-width: 20%;
+    margin-bottom: 5px;
+  }
+
+  .introStats img, h1{
+    -ms-transform: skewY(1deg);
+    -webkit-transform: skewX(1deg);
+    transform: skewY(1deg);
+  }
+
+  .latestVid{
+    background-color: #efdd3b;
+    -ms-transform: skewY(-1deg);
+    -webkit-transform: skewX(-1deg);
+    transform: skewY(-1deg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: -5px;
+    display: flex; /* Flexbox gebruiken */
+    flex-direction: column; /* Plaats elementen verticaal */
+    justify-content: center; /* Centreer de inhoud horizontaal */
+    align-items: center; /* Centreer de inhoud verticaal */
+    height: 40vh; /* Zorg ervoor dat de container de volledige hoogte van het scherm gebruikt */
+    text-align: center; /* Centreer de tekst binnen de container */
+  }
+
+  .latestVid iframe {
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+  }
+
+  .latestVid iframe:hover {
+    transform: scale(1.02);
+  }
+  
+  .latestVid h1, #latest-video{
+    -ms-transform: skewY(1deg);
+    -webkit-transform: skewX(1deg);
+    transform: skewY(1deg);
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+  }
+  footer {
+    background-color: #323a51;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -15px;
+  }
+  
+  footer .logo{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  footer .logo img{
+    max-width: 100px;
+  }
+  .footerFlex {
+    display: flex;
+    justify-content: space-between; /* Verdeel de kinderen over de ruimte */
+    align-items: center; /* Centreer de items verticaal */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .footerText{
+    margin-top: 5px;
+    margin-left: 10%;
+  }
+  
+  footer div p{
+    font-size: 15px;
+  }
+
+  .footerSocials .footerText{
+    text-align: right;
+  }
+  .footerSocialsIcons{
+    margin-top: 5px;
+    display: flex;
+    margin-right: 10%;
+    gap: 10px;
+  }
+  .footerSocials img{
+    max-width: 25px;
+  }
+  

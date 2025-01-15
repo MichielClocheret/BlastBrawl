@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+#yellowNav{
+    color: #FFF600;
+}
+
+.heroMusic{
+    -ms-transform: skewY(-1deg);
+    -webkit-transform: skewX(-1deg);
+    transform: skewY(-1deg);
+    width: 100%;
+    margin-top: 50px;
+}
+
+.heroMusic img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.containerMusic{
+    margin-top: -5px;
+    -ms-transform: skewY(-1deg);
+    -webkit-transform: skewX(-1deg);
+    transform: skewY(-1deg);
+    background-color: #323A51;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid white;
+}
+
+.titleHeadMusic h1{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.musicSongs{
+    display: flex;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    -ms-transform: skewY(1deg);
+    -webkit-transform: skewX(1deg);
+    transform: skewY(1deg);
+}
+.overlayPlay{
+    position: absolute;
+}
+
+.musicSongs a div img{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    max-width: 50%;
+    transition: transform 0.3s ease;
+}
+.musicSongs img:hover{
+    transform: scale(1.02);
+}
+
+.producerText p{
+    font-size: 15px;
+}
